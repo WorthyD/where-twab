@@ -1,24 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import WhereTwabButton from './components/where-twab-button';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
+    <>
+      <main className="main">
+        <WhereTwabButton></WhereTwabButton>
+      </main>
+      <footer>
+        Not affiliated with Bungie. Please be kind. -{' '}
+        <a href="https://twitter.com/worthyd" target="_blank" rel="noreferrer">
+          @WorthyD
         </a>
-      </header>
-    </div>
+      </footer>
+    </>
   );
 }
 
